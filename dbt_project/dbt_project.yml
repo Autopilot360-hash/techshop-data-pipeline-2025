@@ -1,0 +1,37 @@
+# dbt_project/dbt_project.yml
+name: 'techshop_2025'
+version: '1.0.0'
+config-version: 2
+
+profile: 'techshop_2025'
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["data"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  techshop_2025:
+    +materialized: table
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts
+
+vars:
+  # Dates pour les transformations
+  start_date: '2025-01-01'
+  end_date: '2025-12-31'
+
+  # Configuration des seuils
+  vip_threshold: 1000
+  bestseller_threshold: 100
