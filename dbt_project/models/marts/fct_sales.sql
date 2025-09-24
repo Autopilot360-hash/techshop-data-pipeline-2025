@@ -1,0 +1,64 @@
+-- dbt_project/models/marts/fct_sales.sql
+{{ config(materialized='table') }}
+
+
+SELECT 
+  o.order_id,
+  o.customer_id,
+  oi.product_id,
+  o.order_date,
+  o.order_year,
+  o.order_quarter,
+  o.order_month,
+  o.season,
+  o.sales_channel,
+  o.payment_method,
+  
+  -- Informations client
+  c.customer_segment,
+  c.customer_tenure_segment,
+  c.activity_status,
+  c.country_code,
+  c.is_vip,
+  
+  -- Informations produit
+  p.category,
+  p.subcategory,
+  p.brand,
+  p.price_segment,
+  p.product_innovation_type,
+  
+  -- Métriques de commande
+  oi.quantity,
+  oi.unit_price,
+  oi.total_price,
+  o.total_amount as order_total,
+  o.shipping_cost,
+  o.num_items as total_items_in_order,
+  
+  -- Métriques dérivées
+  ROUND(oi.total_price / o.total_amount * 100, 2) as item_contribution_pct,
+  p.cost * oi.quantity as total_cost,
+  (oi.unit_price - p.cost) * oi.quantity as total_margin,
+  ROUND((oi.unit_price - p.cost) / oi.unit_price * 100, 2) as margin_percentage,
+  
+  -- Indicateurs
+  o.is_completed,
+  o.is_free_shipping,
+  o.is_mobile_order,
+  p.is_eco_friendly,
+  p.is_ai_enabled,
+  p.is_bestseller,
+  
+  -- Métriques temporelles
+  o.days_to_ship,
+  o.total_fulfillment_days
+
+FROM {{ ref('stg_orders') }} o
+JOIN {{ source('raw_data', 'order_items') }} oi 
+  ON o.order_id = oi.order_id
+JOIN {{ ref('stg_customers') }} c 
+  ON o.customer_id = c.customer_id  
+JOIN {{ ref('stg_products') }} p 
+  ON oi.product_id = p.product_id
+WHERE o.is_completed = TRUE

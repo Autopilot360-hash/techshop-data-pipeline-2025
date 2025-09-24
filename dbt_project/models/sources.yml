@@ -1,0 +1,60 @@
+# dbt_project/models/sources.yml
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Raw data tables from TechShop 2025"
+    database: techshop-data-pipeline-2025
+    schema: raw_data
+    tables:
+      - name: customers
+        description: "Customer data with segments and preferences"
+        columns:
+          - name: customer_id
+            description: "Unique customer identifier"
+            tests:
+              - unique
+              - not_null
+      
+      - name: products
+        description: "Product catalog with 2025 innovations"
+        columns:
+          - name: product_id
+            description: "Unique product identifier"
+            tests:
+              - unique
+              - not_null
+      
+      - name: orders
+        description: "Order transactions"
+        columns:
+          - name: order_id
+            description: "Unique order identifier"
+            tests:
+              - unique
+              - not_null
+          - name: customer_id
+            description: "Customer who placed the order"
+            tests:
+              - not_null
+      
+      - name: order_items
+        description: "Individual items in orders"
+        columns:
+          - name: order_id
+            description: "Reference to order"
+            tests:
+              - not_null
+          - name: product_id
+            description: "Reference to product"
+            tests:
+              - not_null
+      
+      - name: marketing_campaigns
+        description: "Marketing campaigns with 2025 channels"
+        columns:
+          - name: campaign_id
+            description: "Unique campaign identifier"
+            tests:
+              - unique
+              - not_null
