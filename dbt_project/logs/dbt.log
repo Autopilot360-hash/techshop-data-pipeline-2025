@@ -4263,3 +4263,735 @@ WHERE o.is_completed = TRUE
 [0m14:43:48.678916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b3e23b85fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b3e22d63760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b3e235e2140>]}
 [0m14:43:48.679713 [debug] [MainThread]: Flushing usage events
 [0m14:43:48.893438 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:06:32.489379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f561765f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f54fdcbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f54fdcb50>]}
+
+
+============================== 15:06:32.493970 | 53451d17-7bca-4a83-8cb1-ee30edc95804 ==============================
+[0m15:06:32.493970 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:06:32.495098 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'printer_width': '80', 'log_path': '/opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/logs', 'profiles_dir': '/home/bquser/.dbt', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'fail_fast': 'False', 'quiet': 'False', 'write_json': 'True', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'empty': 'None', 'static_parser': 'True', 'invocation_command': 'dbt docs generate', 'warn_error': 'None', 'no_print': 'None', 'use_colors': 'True', 'debug': 'False', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m15:06:36.200168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53451d17-7bca-4a83-8cb1-ee30edc95804', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f351a0e20>]}
+[0m15:06:36.309965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53451d17-7bca-4a83-8cb1-ee30edc95804', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f55706e30>]}
+[0m15:06:36.311235 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m15:06:36.623638 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m15:06:36.857723 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:06:36.858515 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:06:36.946846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '53451d17-7bca-4a83-8cb1-ee30edc95804', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f55aa8130>]}
+[0m15:06:36.968027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '53451d17-7bca-4a83-8cb1-ee30edc95804', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f55aaa2c0>]}
+[0m15:06:36.969129 [info ] [MainThread]: Found 4 models, 11 data tests, 5 sources, 495 macros
+[0m15:06:36.969944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53451d17-7bca-4a83-8cb1-ee30edc95804', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f55aaa200>]}
+[0m15:06:36.973865 [info ] [MainThread]: 
+[0m15:06:36.974694 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:06:36.975452 [info ] [MainThread]: 
+[0m15:06:36.976604 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:06:36.985012 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_techshop-data-pipeline-2025_analytics_staging'
+[0m15:06:36.986476 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:06:37.410159 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_techshop-data-pipeline-2025_analytics_staging, now list_techshop-data-pipeline-2025_analytics_marts)
+[0m15:06:37.412476 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:06:37.745221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53451d17-7bca-4a83-8cb1-ee30edc95804', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f5519d480>]}
+[0m15:06:37.746294 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:06:37.805565 [debug] [Thread-1 (]: Began running node model.techshop_2025.stg_customers
+[0m15:06:37.806893 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_techshop-data-pipeline-2025_analytics_marts, now model.techshop_2025.stg_customers)
+[0m15:06:37.807773 [debug] [Thread-1 (]: Began compiling node model.techshop_2025.stg_customers
+[0m15:06:37.825356 [debug] [Thread-1 (]: Writing injected SQL for node "model.techshop_2025.stg_customers"
+[0m15:06:37.826555 [debug] [Thread-1 (]: Began executing node model.techshop_2025.stg_customers
+[0m15:06:37.827399 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:37.877350 [debug] [Thread-1 (]: Finished running node model.techshop_2025.stg_customers
+[0m15:06:37.878301 [debug] [Thread-1 (]: Began running node model.techshop_2025.stg_orders
+[0m15:06:37.879410 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.techshop_2025.stg_customers, now model.techshop_2025.stg_orders)
+[0m15:06:37.880161 [debug] [Thread-1 (]: Began compiling node model.techshop_2025.stg_orders
+[0m15:06:37.886533 [debug] [Thread-1 (]: Writing injected SQL for node "model.techshop_2025.stg_orders"
+[0m15:06:37.887751 [debug] [Thread-1 (]: Began executing node model.techshop_2025.stg_orders
+[0m15:06:37.888638 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:37.938397 [debug] [Thread-1 (]: Finished running node model.techshop_2025.stg_orders
+[0m15:06:37.939355 [debug] [Thread-1 (]: Began running node model.techshop_2025.stg_products
+[0m15:06:37.940316 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.techshop_2025.stg_orders, now model.techshop_2025.stg_products)
+[0m15:06:37.941292 [debug] [Thread-1 (]: Began compiling node model.techshop_2025.stg_products
+[0m15:06:37.947780 [debug] [Thread-1 (]: Writing injected SQL for node "model.techshop_2025.stg_products"
+[0m15:06:37.949048 [debug] [Thread-1 (]: Began executing node model.techshop_2025.stg_products
+[0m15:06:37.949931 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.000345 [debug] [Thread-1 (]: Finished running node model.techshop_2025.stg_products
+[0m15:06:38.001326 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_not_null_raw_data_customers_customer_id.5f7576ec6b
+[0m15:06:38.002434 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.techshop_2025.stg_products, now test.techshop_2025.source_not_null_raw_data_customers_customer_id.5f7576ec6b)
+[0m15:06:38.003525 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_not_null_raw_data_customers_customer_id.5f7576ec6b
+[0m15:06:38.023534 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_not_null_raw_data_customers_customer_id.5f7576ec6b"
+[0m15:06:38.024916 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_not_null_raw_data_customers_customer_id.5f7576ec6b
+[0m15:06:38.026181 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.076884 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_not_null_raw_data_customers_customer_id.5f7576ec6b
+[0m15:06:38.078088 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_not_null_raw_data_marketing_campaigns_campaign_id.aed14aab9c
+[0m15:06:38.079412 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_not_null_raw_data_customers_customer_id.5f7576ec6b, now test.techshop_2025.source_not_null_raw_data_marketing_campaigns_campaign_id.aed14aab9c)
+[0m15:06:38.080274 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_not_null_raw_data_marketing_campaigns_campaign_id.aed14aab9c
+[0m15:06:38.088857 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_not_null_raw_data_marketing_campaigns_campaign_id.aed14aab9c"
+[0m15:06:38.090168 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_not_null_raw_data_marketing_campaigns_campaign_id.aed14aab9c
+[0m15:06:38.091054 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.141694 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_not_null_raw_data_marketing_campaigns_campaign_id.aed14aab9c
+[0m15:06:38.142702 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_not_null_raw_data_order_items_order_id.a98cf18406
+[0m15:06:38.144587 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_not_null_raw_data_marketing_campaigns_campaign_id.aed14aab9c, now test.techshop_2025.source_not_null_raw_data_order_items_order_id.a98cf18406)
+[0m15:06:38.145503 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_not_null_raw_data_order_items_order_id.a98cf18406
+[0m15:06:38.153545 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_not_null_raw_data_order_items_order_id.a98cf18406"
+[0m15:06:38.154807 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_not_null_raw_data_order_items_order_id.a98cf18406
+[0m15:06:38.155661 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.207501 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_not_null_raw_data_order_items_order_id.a98cf18406
+[0m15:06:38.208431 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_not_null_raw_data_order_items_product_id.5ac97549a7
+[0m15:06:38.209442 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_not_null_raw_data_order_items_order_id.a98cf18406, now test.techshop_2025.source_not_null_raw_data_order_items_product_id.5ac97549a7)
+[0m15:06:38.210184 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_not_null_raw_data_order_items_product_id.5ac97549a7
+[0m15:06:38.217578 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_not_null_raw_data_order_items_product_id.5ac97549a7"
+[0m15:06:38.218765 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_not_null_raw_data_order_items_product_id.5ac97549a7
+[0m15:06:38.219732 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.272238 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_not_null_raw_data_order_items_product_id.5ac97549a7
+[0m15:06:38.273380 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_not_null_raw_data_orders_customer_id.6c7f10cde9
+[0m15:06:38.274326 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_not_null_raw_data_order_items_product_id.5ac97549a7, now test.techshop_2025.source_not_null_raw_data_orders_customer_id.6c7f10cde9)
+[0m15:06:38.275550 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_not_null_raw_data_orders_customer_id.6c7f10cde9
+[0m15:06:38.290541 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_not_null_raw_data_orders_customer_id.6c7f10cde9"
+[0m15:06:38.291860 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_not_null_raw_data_orders_customer_id.6c7f10cde9
+[0m15:06:38.292811 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.343263 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_not_null_raw_data_orders_customer_id.6c7f10cde9
+[0m15:06:38.344299 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_not_null_raw_data_orders_order_id.840e0f87e8
+[0m15:06:38.345412 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_not_null_raw_data_orders_customer_id.6c7f10cde9, now test.techshop_2025.source_not_null_raw_data_orders_order_id.840e0f87e8)
+[0m15:06:38.346273 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_not_null_raw_data_orders_order_id.840e0f87e8
+[0m15:06:38.354092 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_not_null_raw_data_orders_order_id.840e0f87e8"
+[0m15:06:38.355310 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_not_null_raw_data_orders_order_id.840e0f87e8
+[0m15:06:38.356218 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.409372 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_not_null_raw_data_orders_order_id.840e0f87e8
+[0m15:06:38.410337 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_not_null_raw_data_products_product_id.135fb6ffe4
+[0m15:06:38.411558 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_not_null_raw_data_orders_order_id.840e0f87e8, now test.techshop_2025.source_not_null_raw_data_products_product_id.135fb6ffe4)
+[0m15:06:38.412421 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_not_null_raw_data_products_product_id.135fb6ffe4
+[0m15:06:38.420345 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_not_null_raw_data_products_product_id.135fb6ffe4"
+[0m15:06:38.421660 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_not_null_raw_data_products_product_id.135fb6ffe4
+[0m15:06:38.422506 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.473277 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_not_null_raw_data_products_product_id.135fb6ffe4
+[0m15:06:38.474263 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_unique_raw_data_customers_customer_id.0090285856
+[0m15:06:38.475373 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_not_null_raw_data_products_product_id.135fb6ffe4, now test.techshop_2025.source_unique_raw_data_customers_customer_id.0090285856)
+[0m15:06:38.476167 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_unique_raw_data_customers_customer_id.0090285856
+[0m15:06:38.487182 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_unique_raw_data_customers_customer_id.0090285856"
+[0m15:06:38.488470 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_unique_raw_data_customers_customer_id.0090285856
+[0m15:06:38.489350 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.540119 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_unique_raw_data_customers_customer_id.0090285856
+[0m15:06:38.541114 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_unique_raw_data_marketing_campaigns_campaign_id.0354a14a2b
+[0m15:06:38.542453 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_unique_raw_data_customers_customer_id.0090285856, now test.techshop_2025.source_unique_raw_data_marketing_campaigns_campaign_id.0354a14a2b)
+[0m15:06:38.543287 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_unique_raw_data_marketing_campaigns_campaign_id.0354a14a2b
+[0m15:06:38.552730 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_unique_raw_data_marketing_campaigns_campaign_id.0354a14a2b"
+[0m15:06:38.553921 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_unique_raw_data_marketing_campaigns_campaign_id.0354a14a2b
+[0m15:06:38.554773 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.604952 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_unique_raw_data_marketing_campaigns_campaign_id.0354a14a2b
+[0m15:06:38.605906 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_unique_raw_data_orders_order_id.9b90266fc8
+[0m15:06:38.606943 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_unique_raw_data_marketing_campaigns_campaign_id.0354a14a2b, now test.techshop_2025.source_unique_raw_data_orders_order_id.9b90266fc8)
+[0m15:06:38.607720 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_unique_raw_data_orders_order_id.9b90266fc8
+[0m15:06:38.615294 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_unique_raw_data_orders_order_id.9b90266fc8"
+[0m15:06:38.616534 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_unique_raw_data_orders_order_id.9b90266fc8
+[0m15:06:38.617390 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.667867 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_unique_raw_data_orders_order_id.9b90266fc8
+[0m15:06:38.668825 [debug] [Thread-1 (]: Began running node test.techshop_2025.source_unique_raw_data_products_product_id.6029824217
+[0m15:06:38.669866 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_unique_raw_data_orders_order_id.9b90266fc8, now test.techshop_2025.source_unique_raw_data_products_product_id.6029824217)
+[0m15:06:38.670639 [debug] [Thread-1 (]: Began compiling node test.techshop_2025.source_unique_raw_data_products_product_id.6029824217
+[0m15:06:38.678125 [debug] [Thread-1 (]: Writing injected SQL for node "test.techshop_2025.source_unique_raw_data_products_product_id.6029824217"
+[0m15:06:38.679524 [debug] [Thread-1 (]: Began executing node test.techshop_2025.source_unique_raw_data_products_product_id.6029824217
+[0m15:06:38.680669 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.731176 [debug] [Thread-1 (]: Finished running node test.techshop_2025.source_unique_raw_data_products_product_id.6029824217
+[0m15:06:38.732235 [debug] [Thread-1 (]: Began running node model.techshop_2025.fct_sales
+[0m15:06:38.733267 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.techshop_2025.source_unique_raw_data_products_product_id.6029824217, now model.techshop_2025.fct_sales)
+[0m15:06:38.734359 [debug] [Thread-1 (]: Began compiling node model.techshop_2025.fct_sales
+[0m15:06:38.741616 [debug] [Thread-1 (]: Writing injected SQL for node "model.techshop_2025.fct_sales"
+[0m15:06:38.742891 [debug] [Thread-1 (]: Began executing node model.techshop_2025.fct_sales
+[0m15:06:38.743788 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:06:38.793630 [debug] [Thread-1 (]: Finished running node model.techshop_2025.fct_sales
+[0m15:06:38.795877 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:06:38.796726 [debug] [MainThread]: Connection 'model.techshop_2025.fct_sales' was properly closed.
+[0m15:06:38.800839 [debug] [MainThread]: Command end result
+[0m15:06:38.978323 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/manifest.json
+[0m15:06:38.981880 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/semantic_manifest.json
+[0m15:06:38.994644 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/run_results.json
+[0m15:06:38.998572 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m15:06:38.999294 [info ] [MainThread]: Building catalog
+[0m15:06:39.010255 [debug] [ThreadPool]: Acquiring new bigquery connection 'techshop-data-pipeline-2025.information_schema'
+[0m15:06:39.054174 [debug] [ThreadPool]: On techshop-data-pipeline-2025.information_schema: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "techshop_2025", "target_name": "dev", "connection_name": "techshop-data-pipeline-2025.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `techshop-data-pipeline-2025`.`raw_data`.__TABLES__ tables
+    left join `techshop-data-pipeline-2025`.`raw_data`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `techshop-data-pipeline-2025`.`raw_data`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('raw_data')
+                            and upper(table_name) = upper('marketing_campaigns')
+                            ) or (
+                                upper(table_schema) = upper('raw_data')
+                            and upper(table_name) = upper('products')
+                            ) or (
+                                upper(table_schema) = upper('raw_data')
+                            and upper(table_name) = upper('orders')
+                            ) or (
+                                upper(table_schema) = upper('raw_data')
+                            and upper(table_name) = upper('order_items')
+                            ) or (
+                                upper(table_schema) = upper('raw_data')
+                            and upper(table_name) = upper('customers')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `techshop-data-pipeline-2025`.`raw_data`.INFORMATION_SCHEMA.COLUMNS columns
+    join `techshop-data-pipeline-2025`.`raw_data`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m15:06:39.056010 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:06:39.705303 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=techshop-data-pipeline-2025&j=bq:US:b150379a-7b26-43f3-abc3-235076897a5f&page=queryresults
+[0m15:06:42.370660 [debug] [ThreadPool]: On techshop-data-pipeline-2025.information_schema: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "techshop_2025", "target_name": "dev", "connection_name": "techshop-data-pipeline-2025.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `techshop-data-pipeline-2025`.`analytics_marts`.__TABLES__ tables
+    left join `techshop-data-pipeline-2025`.`analytics_marts`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `techshop-data-pipeline-2025`.`analytics_marts`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('analytics_marts')
+                            and upper(table_name) = upper('fct_sales')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `techshop-data-pipeline-2025`.`analytics_marts`.INFORMATION_SCHEMA.COLUMNS columns
+    join `techshop-data-pipeline-2025`.`analytics_marts`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m15:06:42.372053 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:06:43.170802 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=techshop-data-pipeline-2025&j=bq:US:28204784-c78e-4fae-baae-25cba621180e&page=queryresults
+[0m15:06:46.039901 [debug] [ThreadPool]: On techshop-data-pipeline-2025.information_schema: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "techshop_2025", "target_name": "dev", "connection_name": "techshop-data-pipeline-2025.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `techshop-data-pipeline-2025`.`analytics_staging`.__TABLES__ tables
+    left join `techshop-data-pipeline-2025`.`analytics_staging`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `techshop-data-pipeline-2025`.`analytics_staging`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('analytics_staging')
+                            and upper(table_name) = upper('stg_orders')
+                            ) or (
+                                upper(table_schema) = upper('analytics_staging')
+                            and upper(table_name) = upper('stg_products')
+                            ) or (
+                                upper(table_schema) = upper('analytics_staging')
+                            and upper(table_name) = upper('stg_customers')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `techshop-data-pipeline-2025`.`analytics_staging`.INFORMATION_SCHEMA.COLUMNS columns
+    join `techshop-data-pipeline-2025`.`analytics_staging`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m15:06:46.041501 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:06:46.642868 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=techshop-data-pipeline-2025&j=bq:US:0de872ae-6cce-4991-99db-eda2dd821861&page=queryresults
+[0m15:06:49.989895 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:06:50.068143 [debug] [MainThread]: Wrote artifact CatalogArtifact to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/catalog.json
+[0m15:06:50.113473 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/manifest.json
+[0m15:06:50.116636 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/semantic_manifest.json
+[0m15:06:50.117525 [info ] [MainThread]: Catalog written to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/catalog.json
+[0m15:06:50.119747 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 17.728132, "process_in_blocks": "0", "process_kernel_time": 0.769669, "process_mem_max_rss": "389732", "process_out_blocks": "5888", "process_user_time": 10.816837}
+[0m15:06:50.120778 [debug] [MainThread]: Command `dbt docs generate` succeeded at 15:06:50.120571 after 17.73 seconds
+[0m15:06:50.121489 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:06:50.122135 [debug] [MainThread]: Connection 'techshop-data-pipeline-2025.information_schema' was properly closed.
+[0m15:06:50.122797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f561765f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f55aaa8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755f55aaa2c0>]}
+[0m15:06:50.123560 [debug] [MainThread]: Flushing usage events
+[0m15:06:50.347862 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:09:02.172260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b95ababd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b9598eea10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b9598efd00>]}
+
+
+============================== 15:09:02.176929 | d07654a3-0092-4ce6-b804-5ea114b1ae96 ==============================
+[0m15:09:02.176929 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:09:02.177983 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'partial_parse': 'True', 'log_format': 'default', 'empty': 'None', 'indirect_selection': 'eager', 'quiet': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'profiles_dir': '/home/bquser/.dbt', 'target_path': 'None', 'use_experimental_parser': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'log_path': '/opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/logs', 'invocation_command': 'dbt docs serve --port 8080', 'warn_error': 'None', 'introspect': 'True'}
+[0m15:09:05.757235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd07654a3-0092-4ce6-b804-5ea114b1ae96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b95c088d30>]}
+[0m15:09:05.867262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd07654a3-0092-4ce6-b804-5ea114b1ae96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b959976920>]}
+[0m16:53:59.185350 [error] [MainThread]: Encountered an error:
+

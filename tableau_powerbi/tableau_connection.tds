@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<datasource formatted-name='TechShop 2025 Analytics' version='18.1'>
+  <connection class='bigquery' 
+              odbc-connect-string-extras='PROJECT=techshop-data-pipeline-2025' 
+              server='https://www.googleapis.com/bigquery/v1' 
+              username='' 
+              project='techshop-data-pipeline-2025'>
+    <relation connection='bigquery' 
+              name='fct_sales' 
+              table='[analytics_marts].[fct_sales]' 
+              type='table'/>
+  </connection>
+</datasource>

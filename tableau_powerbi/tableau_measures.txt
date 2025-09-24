@@ -1,0 +1,25 @@
+// Mesures Calculées Tableau pour TechShop 2025
+
+// Total Revenue
+SUM([total_price])
+
+// ROAS Marketing
+SUM([total_revenue]) / SUM([total_budget])
+
+// Customer Retention Rate
+COUNT(IF [total_orders] >= 2 THEN [customer_id] END) / COUNT([customer_id])
+
+// Month over Month Growth
+(ZN(SUM([revenue])) - LOOKUP(ZN(SUM([revenue])), -1)) / ABS(LOOKUP(ZN(SUM([revenue])), -1))
+
+// Average Order Value
+SUM([total_price]) / COUNTD([order_id])
+
+// Eco-Friendly Product Penetration
+COUNT(IF [is_eco_friendly] = TRUE THEN [product_id] END) / COUNT([product_id])
+
+// Customer Lifetime Value
+AVG([lifetime_value])
+
+// Innovation Revenue Share
+SUM(IF [product_innovation_type] != 'Standard' THEN [total_price] END) / SUM([total_price])

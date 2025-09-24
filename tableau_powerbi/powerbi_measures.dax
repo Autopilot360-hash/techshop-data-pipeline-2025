@@ -1,0 +1,55 @@
+// Mesures DAX pour Power BI - TechShop 2025
+
+// Revenue Totaux
+Total Revenue = SUM(fct_sales[total_price])
+
+// Croissance Month over Month
+Revenue Growth MoM = 
+DIVIDE(
+    [Total Revenue] - CALCULATE([Total Revenue], DATEADD(fct_sales[order_date], -1, MONTH)),
+    CALCULATE([Total Revenue], DATEADD(fct_sales[order_date], -1, MONTH))
+)
+
+// Taux de Rétention Client
+Customer Retention Rate = 
+DIVIDE(
+    CALCULATE(
+        DISTINCTCOUNT(fct_sales[customer_id]), 
+        CALCULATE(
+            COUNTROWS(
+                SUMMARIZE(
+                    fct_sales,
+                    fct_sales[customer_id],
+                    "OrderCount", COUNTROWS(fct_sales)
+                )
+            ),
+            [OrderCount] >= 2
+        )
+    ),
+    DISTINCTCOUNT(fct_sales[customer_id])
+)
+
+// Valeur Moyenne Commande  
+Average Order Value = 
+DIVIDE([Total Revenue], DISTINCTCOUNT(fct_sales[order_id]))
+
+// ROAS Marketing (nécessite table marketing_campaigns)
+ROAS = 
+DIVIDE(
+    SUM(marketing_campaigns[total_revenue]), 
+    SUM(marketing_campaigns[total_budget])
+)
+
+// Part des Produits Eco-friendly
+Eco Friendly Revenue Share = 
+DIVIDE(
+    CALCULATE([Total Revenue], fct_sales[is_eco_friendly] = TRUE),
+    [Total Revenue]
+)
+
+// Clients Actifs (commandes dans les 30 derniers jours)
+Active Customers = 
+CALCULATE(
+    DISTINCTCOUNT(fct_sales[customer_id]),
+    DATESINPERIOD(fct_sales[order_date], TODAY(), -30, DAY)
+)
