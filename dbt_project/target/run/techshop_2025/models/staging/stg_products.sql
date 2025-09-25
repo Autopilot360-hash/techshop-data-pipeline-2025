@@ -1,6 +1,6 @@
 
 
-  create or replace view `techshop-data-pipeline-2025`.`analytics_staging`.`stg_products`
+  create or replace view `techshop-data-pipeline-2025`.`staging`.`stg_products`
   OPTIONS()
   as -- dbt_project/models/staging/stg_products.sql
 

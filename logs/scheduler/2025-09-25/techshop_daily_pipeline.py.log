@@ -1,0 +1,347 @@
+[2025-09-25T00:00:29.100+0000] {processor.py:161} INFO - Started process (PID=3469) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:00:29.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:00:29.105+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:00:29.105+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:00:29.111+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:00:29.109+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:00:29.111+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:00:29.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.046 seconds
+[2025-09-25T00:00:59.588+0000] {processor.py:161} INFO - Started process (PID=3489) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:00:59.589+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:00:59.593+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:00:59.592+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:00:59.600+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:00:59.598+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:00:59.600+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:00:59.637+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.057 seconds
+[2025-09-25T00:01:30.053+0000] {processor.py:161} INFO - Started process (PID=3509) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:01:30.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:01:30.059+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:01:30.059+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:01:30.065+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:01:30.064+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:01:30.066+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:01:30.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.053 seconds
+[2025-09-25T00:02:00.501+0000] {processor.py:161} INFO - Started process (PID=3529) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:02:00.503+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:02:00.507+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:02:00.506+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:02:00.513+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:02:00.512+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:02:00.514+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:02:00.547+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.052 seconds
+[2025-09-25T00:02:30.954+0000] {processor.py:161} INFO - Started process (PID=3549) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:02:30.957+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:02:30.960+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:02:30.960+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:02:30.966+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:02:30.965+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:02:30.967+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:02:31.002+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.054 seconds
+[2025-09-25T00:03:01.438+0000] {processor.py:161} INFO - Started process (PID=3569) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:03:01.439+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:03:01.443+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:03:01.442+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:03:01.448+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:03:01.447+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:03:01.449+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:03:01.483+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.052 seconds
+[2025-09-25T00:03:31.914+0000] {processor.py:161} INFO - Started process (PID=3589) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:03:31.917+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:03:31.921+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:03:31.921+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:03:31.927+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:03:31.926+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:03:31.928+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:03:31.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.056 seconds
+[2025-09-25T00:04:02.386+0000] {processor.py:161} INFO - Started process (PID=3609) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:04:02.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:04:02.391+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:04:02.391+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:04:02.397+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:04:02.396+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:04:02.398+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:04:02.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.055 seconds
+[2025-09-25T00:04:32.891+0000] {processor.py:161} INFO - Started process (PID=3629) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:04:32.893+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:04:32.898+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:04:32.897+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:04:32.904+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:04:32.902+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:04:32.904+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:04:32.941+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.058 seconds
+[2025-09-25T00:05:03.377+0000] {processor.py:161} INFO - Started process (PID=3649) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:05:03.378+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:05:03.382+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:05:03.382+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:05:03.389+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:05:03.387+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:05:03.389+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:05:03.424+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.054 seconds
+[2025-09-25T00:05:33.873+0000] {processor.py:161} INFO - Started process (PID=3669) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:05:33.876+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:05:33.879+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:05:33.879+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:05:33.885+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:05:33.884+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:05:33.886+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:05:33.925+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.058 seconds
+[2025-09-25T00:06:04.402+0000] {processor.py:161} INFO - Started process (PID=3689) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:06:04.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:06:04.409+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:06:04.408+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:06:04.418+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:06:04.415+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:06:04.419+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:06:04.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.072 seconds
+[2025-09-25T00:06:34.958+0000] {processor.py:161} INFO - Started process (PID=3709) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:06:34.960+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:06:34.964+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:06:34.964+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:06:34.970+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:06:34.969+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:06:34.971+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:06:35.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.057 seconds
+[2025-09-25T00:07:05.472+0000] {processor.py:161} INFO - Started process (PID=3729) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:07:05.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:07:05.477+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:07:05.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:07:05.484+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:07:05.482+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:07:05.484+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:07:05.520+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.054 seconds
+[2025-09-25T00:07:35.956+0000] {processor.py:161} INFO - Started process (PID=3749) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:07:35.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:07:35.963+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:07:35.962+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:07:35.969+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:07:35.968+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:07:35.970+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:07:36.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.056 seconds
+[2025-09-25T00:08:06.454+0000] {processor.py:161} INFO - Started process (PID=3769) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:08:06.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:08:06.463+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:08:06.462+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:08:06.469+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:08:06.468+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:08:06.470+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:08:06.506+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.058 seconds
+[2025-09-25T00:08:36.975+0000] {processor.py:161} INFO - Started process (PID=3789) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:08:36.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:08:36.983+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:08:36.983+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:08:36.989+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:08:36.988+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:08:36.990+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:08:37.025+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.056 seconds
+[2025-09-25T00:09:07.471+0000] {processor.py:161} INFO - Started process (PID=3809) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:09:07.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:09:07.478+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:09:07.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:09:07.484+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:09:07.482+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:09:07.484+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:09:07.518+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.053 seconds
+[2025-09-25T00:09:37.942+0000] {processor.py:161} INFO - Started process (PID=3829) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:09:37.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:09:37.949+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:09:37.948+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:09:37.955+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:09:37.954+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:09:37.956+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:09:37.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.054 seconds
+[2025-09-25T00:10:08.415+0000] {processor.py:161} INFO - Started process (PID=3849) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:10:08.419+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:10:08.423+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:10:08.422+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:10:08.429+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:10:08.427+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:10:08.429+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:10:08.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.055 seconds
+[2025-09-25T00:10:38.900+0000] {processor.py:161} INFO - Started process (PID=3869) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:10:38.902+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:10:38.905+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:10:38.905+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:10:38.912+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:10:38.911+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:10:38.912+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:10:38.948+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.054 seconds
+[2025-09-25T00:11:09.364+0000] {processor.py:161} INFO - Started process (PID=3889) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:11:09.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:11:09.427+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:11:09.426+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:11:09.432+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:11:09.431+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:11:09.433+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:11:09.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.112 seconds
+[2025-09-25T00:11:39.891+0000] {processor.py:161} INFO - Started process (PID=3909) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:11:39.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:11:39.896+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:11:39.895+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:11:39.902+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:11:39.901+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:11:39.902+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:11:39.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.055 seconds
+[2025-09-25T00:12:10.359+0000] {processor.py:161} INFO - Started process (PID=3929) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:12:10.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:12:10.367+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:12:10.367+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:12:10.374+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:12:10.372+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/techshop_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/techshop_daily_pipeline.py", line 4, in <module>
+    from airflow.providers.bash.operators import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.bash'
+[2025-09-25T00:12:10.375+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:12:10.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.057 seconds
+[2025-09-25T00:12:33.603+0000] {processor.py:161} INFO - Started process (PID=3939) to work on /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:12:33.604+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/techshop_daily_pipeline.py for tasks to queue
+[2025-09-25T00:12:33.608+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:12:33.608+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:12:33.630+0000] {processor.py:840} INFO - DAG(s) 'techshop_daily_pipeline_fixed' retrieved from /opt/airflow/dags/techshop_daily_pipeline.py
+[2025-09-25T00:12:33.831+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:12:33.830+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:techshop_daily_pipeline_fixed
+[2025-09-25T00:12:33.849+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:12:33.849+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:techshop_daily_pipeline_fixed
+[2025-09-25T00:12:33.862+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:12:33.862+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:techshop_daily_pipeline_fixed
+[2025-09-25T00:12:33.863+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:12:33.863+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2025-09-25T00:12:33.880+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:12:33.879+0000] {dag.py:3055} INFO - Creating ORM DAG for techshop_daily_pipeline_fixed
+[2025-09-25T00:12:33.896+0000] {logging_mixin.py:188} INFO - [2025-09-25T00:12:33.895+0000] {dag.py:3820} INFO - Setting next_dagrun for techshop_daily_pipeline_fixed to 2025-09-24T06:00:00+00:00, run_after=2025-09-25T06:00:00+00:00
+[2025-09-25T00:12:33.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/techshop_daily_pipeline.py took 0.334 seconds

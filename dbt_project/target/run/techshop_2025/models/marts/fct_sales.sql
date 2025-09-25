@@ -2,7 +2,7 @@
   
     
 
-    create or replace table `techshop-data-pipeline-2025`.`analytics_marts`.`fct_sales`
+    create or replace table `techshop-data-pipeline-2025`.`marts`.`fct_sales`
       
     
     
@@ -66,12 +66,12 @@ SELECT
   o.days_to_ship,
   o.total_fulfillment_days
 
-FROM `techshop-data-pipeline-2025`.`analytics_staging`.`stg_orders` o
+FROM `techshop-data-pipeline-2025`.`staging`.`stg_orders` o
 JOIN `techshop-data-pipeline-2025`.`raw_data`.`order_items` oi 
   ON o.order_id = oi.order_id
-JOIN `techshop-data-pipeline-2025`.`analytics_staging`.`stg_customers` c 
+JOIN `techshop-data-pipeline-2025`.`staging`.`stg_customers` c 
   ON o.customer_id = c.customer_id  
-JOIN `techshop-data-pipeline-2025`.`analytics_staging`.`stg_products` p 
+JOIN `techshop-data-pipeline-2025`.`staging`.`stg_products` p 
   ON oi.product_id = p.product_id
 WHERE o.is_completed = TRUE
     );

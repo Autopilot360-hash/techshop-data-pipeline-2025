@@ -4995,3 +4995,367 @@ WHERE o.is_completed = TRUE
 [0m15:09:05.867262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd07654a3-0092-4ce6-b804-5ea114b1ae96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b959976920>]}
 [0m16:53:59.185350 [error] [MainThread]: Encountered an error:
 
+[0m19:13:15.508640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742f09c87b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742f08abfb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742f08abfbe0>]}
+
+
+============================== 19:13:15.513613 | ebb6fc03-425a-4c2b-9654-5aa224bd8490 ==============================
+[0m19:13:15.513613 [info ] [MainThread]: Running with dbt=1.10.11
+[0m19:13:15.514477 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/logs', 'fail_fast': 'False', 'profiles_dir': '/home/bquser/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m19:13:22.205755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742f0b556aa0>]}
+[0m19:13:22.315987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742f08c3c100>]}
+[0m19:13:22.317262 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m19:13:22.678610 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m19:13:22.910778 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m19:13:22.911913 [debug] [MainThread]: Partial parsing: added file: techshop_2025://macros/generate_schema_name.sql
+[0m19:13:22.916242 [info ] [MainThread]: Unable to do partial parsing because change detected to override macro. Starting full parse.
+[0m19:13:24.985497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742ee65353c0>]}
+[0m19:13:25.142530 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/manifest.json
+[0m19:13:25.145749 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/semantic_manifest.json
+[0m19:13:25.166805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742ee705aa70>]}
+[0m19:13:25.168115 [info ] [MainThread]: Found 4 models, 11 data tests, 5 sources, 496 macros
+[0m19:13:25.168956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742ee6ef6bf0>]}
+[0m19:13:25.172142 [info ] [MainThread]: 
+[0m19:13:25.172906 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:13:25.173564 [info ] [MainThread]: 
+[0m19:13:25.174857 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:13:25.183435 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_techshop-data-pipeline-2025'
+[0m19:13:25.184530 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:13:25.586569 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:13:25.941850 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_techshop-data-pipeline-2025, now create_techshop-data-pipeline-2025_staging)
+[0m19:13:25.943055 [debug] [ThreadPool]: Creating schema "database: "techshop-data-pipeline-2025"
+schema: "staging"
+"
+[0m19:13:25.959210 [debug] [ThreadPool]: On create_techshop-data-pipeline-2025_staging: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "techshop_2025", "target_name": "dev", "connection_name": "create_techshop-data-pipeline-2025_staging"} */
+create schema if not exists `techshop-data-pipeline-2025`.`staging`
+  
+[0m19:13:25.960019 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:13:26.519347 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=techshop-data-pipeline-2025&j=bq:US:b981eea0-7bb5-4866-b4e7-4ec57492d3dc&page=queryresults
+[0m19:13:27.217254 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_techshop-data-pipeline-2025_staging, now create_techshop-data-pipeline-2025_marts)
+[0m19:13:27.218495 [debug] [ThreadPool]: Creating schema "database: "techshop-data-pipeline-2025"
+schema: "marts"
+"
+[0m19:13:27.222685 [debug] [ThreadPool]: On create_techshop-data-pipeline-2025_marts: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "techshop_2025", "target_name": "dev", "connection_name": "create_techshop-data-pipeline-2025_marts"} */
+create schema if not exists `techshop-data-pipeline-2025`.`marts`
+  
+[0m19:13:27.223470 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:13:27.660801 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=techshop-data-pipeline-2025&j=bq:US:8c0fdd2f-c3fb-48b0-9c85-673078b33db3&page=queryresults
+[0m19:13:28.629155 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_techshop-data-pipeline-2025_marts, now list_techshop-data-pipeline-2025_staging)
+[0m19:13:28.630279 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:13:29.000207 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_techshop-data-pipeline-2025_staging, now list_techshop-data-pipeline-2025_marts)
+[0m19:13:29.001340 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:13:29.338696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742f0b5436a0>]}
+[0m19:13:29.339926 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:13:29.394814 [debug] [Thread-1 (]: Began running node model.techshop_2025.stg_customers
+[0m19:13:29.396118 [info ] [Thread-1 (]: 1 of 4 START sql view model staging.stg_customers .............................. [RUN]
+[0m19:13:29.397198 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_techshop-data-pipeline-2025_marts, now model.techshop_2025.stg_customers)
+[0m19:13:29.397866 [debug] [Thread-1 (]: Began compiling node model.techshop_2025.stg_customers
+[0m19:13:29.413309 [debug] [Thread-1 (]: Writing injected SQL for node "model.techshop_2025.stg_customers"
+[0m19:13:29.414603 [debug] [Thread-1 (]: Began executing node model.techshop_2025.stg_customers
+[0m19:13:29.453338 [debug] [Thread-1 (]: Writing runtime sql for node "model.techshop_2025.stg_customers"
+[0m19:13:29.454781 [debug] [Thread-1 (]: On model.techshop_2025.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "techshop_2025", "target_name": "dev", "node_id": "model.techshop_2025.stg_customers"} */
+
+
+  create or replace view `techshop-data-pipeline-2025`.`staging`.`stg_customers`
+  OPTIONS()
+  as -- dbt_project/models/staging/stg_customers.sql
+
+
+SELECT 
+  customer_id,
+  first_name,
+  last_name,
+  LOWER(email) as email,
+  UPPER(country) as country_code,
+  city,
+  created_at,
+  customer_segment,
+  ROUND(lifetime_value, 2) as lifetime_value,
+  ROUND(avg_order_value, 2) as avg_order_value,
+  order_frequency,
+  SPLIT(preferred_categories, ',') as preferred_categories_array,
+  is_vip,
+  newsletter_subscriber,
+  mobile_app_user,
+  last_active_date,
+  
+  -- Calculs dérivés
+  DATE_DIFF(CURRENT_DATE(), created_at, DAY) as days_since_signup,
+  DATE_DIFF(CURRENT_DATE(), last_active_date, DAY) as days_since_last_active,
+  
+  -- Segmentation par ancienneté
+  CASE 
+    WHEN DATE_DIFF(CURRENT_DATE(), created_at, DAY) <= 30 THEN 'New (0-30 days)'
+    WHEN DATE_DIFF(CURRENT_DATE(), created_at, DAY) <= 90 THEN 'Recent (31-90 days)' 
+    WHEN DATE_DIFF(CURRENT_DATE(), created_at, DAY) <= 365 THEN 'Established (91-365 days)'
+    ELSE 'Veteran (1+ years)'
+  END as customer_tenure_segment,
+  
+  -- Statut d'activité
+  CASE 
+    WHEN DATE_DIFF(CURRENT_DATE(), last_active_date, DAY) <= 30 THEN 'Active'
+    WHEN DATE_DIFF(CURRENT_DATE(), last_active_date, DAY) <= 90 THEN 'At Risk'
+    ELSE 'Inactive' 
+  END as activity_status
+
+FROM `techshop-data-pipeline-2025`.`raw_data`.`customers`;
+
+
+[0m19:13:29.455743 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:30.017627 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=techshop-data-pipeline-2025&j=bq:US:73d4a09b-1725-427c-93da-cae691e9dc96&page=queryresults
+[0m19:13:30.385234 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742ee70f3340>]}
+[0m19:13:30.386728 [info ] [Thread-1 (]: 1 of 4 OK created sql view model staging.stg_customers ......................... [[32mCREATE VIEW (0 processed)[0m in 0.99s]
+[0m19:13:30.388046 [debug] [Thread-1 (]: Finished running node model.techshop_2025.stg_customers
+[0m19:13:30.388803 [debug] [Thread-1 (]: Began running node model.techshop_2025.stg_orders
+[0m19:13:30.389646 [info ] [Thread-1 (]: 2 of 4 START sql view model staging.stg_orders ................................. [RUN]
+[0m19:13:30.390936 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.techshop_2025.stg_customers, now model.techshop_2025.stg_orders)
+[0m19:13:30.391627 [debug] [Thread-1 (]: Began compiling node model.techshop_2025.stg_orders
+[0m19:13:30.400570 [debug] [Thread-1 (]: Writing injected SQL for node "model.techshop_2025.stg_orders"
+[0m19:13:30.401821 [debug] [Thread-1 (]: Began executing node model.techshop_2025.stg_orders
+[0m19:13:30.407141 [debug] [Thread-1 (]: Writing runtime sql for node "model.techshop_2025.stg_orders"
+[0m19:13:30.408523 [debug] [Thread-1 (]: On model.techshop_2025.stg_orders: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "techshop_2025", "target_name": "dev", "node_id": "model.techshop_2025.stg_orders"} */
+
+
+  create or replace view `techshop-data-pipeline-2025`.`staging`.`stg_orders`
+  OPTIONS()
+  as -- dbt_project/models/staging/stg_orders.sql
+
+
+SELECT 
+  order_id,
+  customer_id,
+  order_date,
+  ROUND(total_amount, 2) as total_amount,
+  ROUND(shipping_cost, 2) as shipping_cost,
+  ROUND(total_amount - shipping_cost, 2) as subtotal,
+  payment_method,
+  order_status,
+  sales_channel,
+  num_items,
+  shipped_date,
+  delivered_date,
+  created_at,
+  
+  -- Calculs temporels
+  DATE_DIFF(shipped_date, order_date, DAY) as days_to_ship,
+  DATE_DIFF(delivered_date, shipped_date, DAY) as days_in_transit,
+  DATE_DIFF(delivered_date, order_date, DAY) as total_fulfillment_days,
+  
+  -- Segmentation par montant
+  CASE 
+    WHEN total_amount < 50 THEN 'Low Value (<$50)'
+    WHEN total_amount < 150 THEN 'Medium Value ($50-$150)'
+    WHEN total_amount < 300 THEN 'High Value ($150-$300)'
+    ELSE 'Premium Value ($300+)'
+  END as order_value_segment,
+  
+  -- Indicateurs temporels 2025
+  EXTRACT(YEAR FROM order_date) as order_year,
+  EXTRACT(QUARTER FROM order_date) as order_quarter,
+  EXTRACT(MONTH FROM order_date) as order_month,
+  EXTRACT(DAYOFWEEK FROM order_date) as order_day_of_week,
+  FORMAT_DATE('%A', order_date) as order_day_name,
+  
+  -- Indicateurs saisonniers
+  CASE 
+    WHEN EXTRACT(MONTH FROM order_date) IN (12, 1, 2) THEN 'Winter'
+    WHEN EXTRACT(MONTH FROM order_date) IN (3, 4, 5) THEN 'Spring'
+    WHEN EXTRACT(MONTH FROM order_date) IN (6, 7, 8) THEN 'Summer'
+    ELSE 'Fall'
+  END as season,
+  
+  -- Indicateurs de performance
+  shipping_cost = 0 as is_free_shipping,
+  order_status = 'Completed' as is_completed,
+  sales_channel = 'Mobile App' as is_mobile_order
+
+FROM `techshop-data-pipeline-2025`.`raw_data`.`orders`
+WHERE order_date >= '2025-01-01'
+  AND order_date <= '2025-12-31';
+
+
+[0m19:13:30.409566 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:31.017205 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=techshop-data-pipeline-2025&j=bq:US:f41e630e-e699-4748-abb5-2dacdcf20067&page=queryresults
+[0m19:13:31.622709 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742f09faed70>]}
+[0m19:13:31.624221 [info ] [Thread-1 (]: 2 of 4 OK created sql view model staging.stg_orders ............................ [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m19:13:31.625295 [debug] [Thread-1 (]: Finished running node model.techshop_2025.stg_orders
+[0m19:13:31.625971 [debug] [Thread-1 (]: Began running node model.techshop_2025.stg_products
+[0m19:13:31.627156 [info ] [Thread-1 (]: 3 of 4 START sql view model staging.stg_products ............................... [RUN]
+[0m19:13:31.628293 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.techshop_2025.stg_orders, now model.techshop_2025.stg_products)
+[0m19:13:31.628947 [debug] [Thread-1 (]: Began compiling node model.techshop_2025.stg_products
+[0m19:13:31.635783 [debug] [Thread-1 (]: Writing injected SQL for node "model.techshop_2025.stg_products"
+[0m19:13:31.637042 [debug] [Thread-1 (]: Began executing node model.techshop_2025.stg_products
+[0m19:13:31.642251 [debug] [Thread-1 (]: Writing runtime sql for node "model.techshop_2025.stg_products"
+[0m19:13:31.643559 [debug] [Thread-1 (]: On model.techshop_2025.stg_products: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "techshop_2025", "target_name": "dev", "node_id": "model.techshop_2025.stg_products"} */
+
+
+  create or replace view `techshop-data-pipeline-2025`.`staging`.`stg_products`
+  OPTIONS()
+  as -- dbt_project/models/staging/stg_products.sql
+
+
+SELECT 
+  product_id,
+  sku,
+  product_name,
+  category,
+  subcategory,
+  brand,
+  ROUND(price, 2) as price,
+  ROUND(cost, 2) as cost,
+  ROUND(price - cost, 2) as margin_amount,
+  ROUND((price - cost) / price * 100, 2) as margin_percentage,
+  stock_quantity,
+  ROUND(avg_rating, 2) as avg_rating,
+  num_reviews,
+  launch_date,
+  weight,
+  is_eco_friendly,
+  is_ai_enabled,
+  is_bestseller,
+  created_at,
+  updated_at,
+  
+  -- Segmentation par prix
+  CASE 
+    WHEN price < 50 THEN 'Budget (<$50)'
+    WHEN price < 150 THEN 'Mid-Range ($50-$150)'
+    WHEN price < 300 THEN 'Premium ($150-$300)'
+    ELSE 'Luxury ($300+)'
+  END as price_segment,
+  
+  -- Statut de popularité
+  CASE 
+    WHEN num_reviews >= 100 AND avg_rating >= 4.5 THEN 'Top Rated'
+    WHEN num_reviews >= 50 AND avg_rating >= 4.0 THEN 'Well Rated'
+    WHEN num_reviews >= 10 THEN 'Some Reviews'
+    ELSE 'New/Few Reviews'
+  END as review_status,
+  
+  -- Indicateurs 2025
+  EXTRACT(YEAR FROM launch_date) = 2025 as is_new_2025,
+  DATE_DIFF(CURRENT_DATE(), launch_date, DAY) as days_since_launch,
+  stock_quantity <= 10 as is_low_stock,
+  
+  -- Catégorisation avancée
+  CASE 
+    WHEN is_eco_friendly AND is_ai_enabled THEN 'Eco-AI Product'
+    WHEN is_eco_friendly THEN 'Eco-Friendly'
+    WHEN is_ai_enabled THEN 'AI-Enabled'
+    ELSE 'Standard'
+  END as product_innovation_type
+
+FROM `techshop-data-pipeline-2025`.`raw_data`.`products`;
+
+
+[0m19:13:31.644511 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:32.297809 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=techshop-data-pipeline-2025&j=bq:US:eb1fc127-ec40-4e61-ab6a-0dcef97b2911&page=queryresults
+[0m19:13:32.652540 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742ee70f0550>]}
+[0m19:13:32.653914 [info ] [Thread-1 (]: 3 of 4 OK created sql view model staging.stg_products .......................... [[32mCREATE VIEW (0 processed)[0m in 1.02s]
+[0m19:13:32.654966 [debug] [Thread-1 (]: Finished running node model.techshop_2025.stg_products
+[0m19:13:32.656482 [debug] [Thread-1 (]: Began running node model.techshop_2025.fct_sales
+[0m19:13:32.657700 [info ] [Thread-1 (]: 4 of 4 START sql table model marts.fct_sales ................................... [RUN]
+[0m19:13:32.658772 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.techshop_2025.stg_products, now model.techshop_2025.fct_sales)
+[0m19:13:32.659465 [debug] [Thread-1 (]: Began compiling node model.techshop_2025.fct_sales
+[0m19:13:32.667278 [debug] [Thread-1 (]: Writing injected SQL for node "model.techshop_2025.fct_sales"
+[0m19:13:32.668569 [debug] [Thread-1 (]: Began executing node model.techshop_2025.fct_sales
+[0m19:13:32.719034 [debug] [Thread-1 (]: Writing runtime sql for node "model.techshop_2025.fct_sales"
+[0m19:13:32.720582 [debug] [Thread-1 (]: On model.techshop_2025.fct_sales: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "techshop_2025", "target_name": "dev", "node_id": "model.techshop_2025.fct_sales"} */
+
+  
+    
+
+    create or replace table `techshop-data-pipeline-2025`.`marts`.`fct_sales`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- dbt_project/models/marts/fct_sales.sql
+
+
+
+SELECT 
+  o.order_id,
+  o.customer_id,
+  oi.product_id,
+  o.order_date,
+  o.order_year,
+  o.order_quarter,
+  o.order_month,
+  o.season,
+  o.sales_channel,
+  o.payment_method,
+  
+  -- Informations client
+  c.customer_segment,
+  c.customer_tenure_segment,
+  c.activity_status,
+  c.country_code,
+  c.is_vip,
+  
+  -- Informations produit
+  p.category,
+  p.subcategory,
+  p.brand,
+  p.price_segment,
+  p.product_innovation_type,
+  
+  -- Métriques de commande
+  oi.quantity,
+  oi.unit_price,
+  oi.total_price,
+  o.total_amount as order_total,
+  o.shipping_cost,
+  o.num_items as total_items_in_order,
+  
+  -- Métriques dérivées
+  ROUND(oi.total_price / o.total_amount * 100, 2) as item_contribution_pct,
+  p.cost * oi.quantity as total_cost,
+  (oi.unit_price - p.cost) * oi.quantity as total_margin,
+  ROUND((oi.unit_price - p.cost) / oi.unit_price * 100, 2) as margin_percentage,
+  
+  -- Indicateurs
+  o.is_completed,
+  o.is_free_shipping,
+  o.is_mobile_order,
+  p.is_eco_friendly,
+  p.is_ai_enabled,
+  p.is_bestseller,
+  
+  -- Métriques temporelles
+  o.days_to_ship,
+  o.total_fulfillment_days
+
+FROM `techshop-data-pipeline-2025`.`staging`.`stg_orders` o
+JOIN `techshop-data-pipeline-2025`.`raw_data`.`order_items` oi 
+  ON o.order_id = oi.order_id
+JOIN `techshop-data-pipeline-2025`.`staging`.`stg_customers` c 
+  ON o.customer_id = c.customer_id  
+JOIN `techshop-data-pipeline-2025`.`staging`.`stg_products` p 
+  ON oi.product_id = p.product_id
+WHERE o.is_completed = TRUE
+    );
+  
+[0m19:13:32.721566 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:33.477746 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=techshop-data-pipeline-2025&j=bq:US:abf03bc5-6333-4069-beae-1d62209515a7&page=queryresults
+[0m19:13:38.663527 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ebb6fc03-425a-4c2b-9654-5aa224bd8490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742f0a9de350>]}
+[0m19:13:38.664899 [info ] [Thread-1 (]: 4 of 4 OK created sql table model marts.fct_sales .............................. [[32mCREATE TABLE (189.7k rows, 19.2 MiB processed)[0m in 6.00s]
+[0m19:13:38.666139 [debug] [Thread-1 (]: Finished running node model.techshop_2025.fct_sales
+[0m19:13:38.668501 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:13:38.717680 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:13:38.718516 [debug] [MainThread]: Connection 'model.techshop_2025.fct_sales' was properly closed.
+[0m19:13:38.719235 [info ] [MainThread]: 
+[0m19:13:38.719914 [info ] [MainThread]: Finished running 1 table model, 3 view models in 0 hours 0 minutes and 13.54 seconds (13.54s).
+[0m19:13:38.721806 [debug] [MainThread]: Command end result
+[0m19:13:38.763697 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/manifest.json
+[0m19:13:38.766585 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/semantic_manifest.json
+[0m19:13:38.776669 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/app/bigquery-projects/techshop-data-pipeline-2025/dbt_project/target/run_results.json
+[0m19:13:38.777386 [info ] [MainThread]: 
+[0m19:13:38.778179 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:13:38.778782 [info ] [MainThread]: 
+[0m19:13:38.779426 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m19:13:38.780475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742f09c87b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742ee46c8490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742ee46c83d0>]}
+[0m19:13:38.781170 [debug] [MainThread]: Flushing usage events
+[0m19:13:39.034189 [debug] [MainThread]: An error was encountered while trying to flush usage events

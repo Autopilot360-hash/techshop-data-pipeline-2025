@@ -1,0 +1,74 @@
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_db_volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    restart: always
+
+  airflow-webserver:
+    image: apache/airflow:2.8.0-python3.10
+    command: airflow webserver
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: 'fb0c_9YY6LHRlnOKBPu-nK_0tS9Hkd4YgPZu8tU0v8s='
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      _PIP_ADDITIONAL_REQUIREMENTS: 'apache-airflow-providers-google==10.10.1 dbt-core==1.7.0 dbt-bigquery==1.7.0'
+      GOOGLE_APPLICATION_CREDENTIALS: /opt/airflow/service-account-key.json
+      _AIRFLOW_DB_MIGRATE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: admin
+      _AIRFLOW_WWW_USER_PASSWORD: admin123
+      _AIRFLOW_WWW_USER_FIRSTNAME: TechShop
+      _AIRFLOW_WWW_USER_LASTNAME: Admin
+      _AIRFLOW_WWW_USER_EMAIL: admin@techshop.com
+      _AIRFLOW_WWW_USER_ROLE: Admin
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./credentials/service-account-key.json:/opt/airflow/service-account-key.json:ro
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: always
+    user: "${AIRFLOW_UID:-50000}:0"
+
+  airflow-scheduler:
+    image: apache/airflow:2.8.0-python3.10
+    command: airflow scheduler
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__FERNET_KEY: 'fb0c_9YY6LHRlnOKBPu-nK_0tS9Hkd4YgPZu8tU0v8s='
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      _PIP_ADDITIONAL_REQUIREMENTS: 'apache-airflow-providers-google==10.10.1 dbt-core==1.7.0 dbt-bigquery==1.7.0'
+      GOOGLE_APPLICATION_CREDENTIALS: /opt/airflow/service-account-key.json
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./credentials/service-account-key.json:/opt/airflow/service-account-key.json:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: always
+    user: "${AIRFLOW_UID:-50000}:0"
+
+volumes:
+  postgres_db_volume:
